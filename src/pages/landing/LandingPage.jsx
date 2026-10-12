@@ -23,6 +23,13 @@ export default function LandingPage() {
           />
         </object>
 
+        {/* Cropped Architectural Building Complex */}
+        <img
+          src="/building_cropped.svg"
+          alt="Architectural Building Complex"
+          className="hero-building-image"
+        />
+
         {/* Clickable overlay aligned with the REGISTER NOW button in the artwork */}
         <div className="hero-register-btn-wrapper">
           <InteractiveHoverButton

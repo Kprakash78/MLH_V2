@@ -10,9 +10,12 @@
 .artwork-container {
   width: 100%;
   position: relative;
-  aspect-ratio: 1920 / 1205;
+  height: calc(100vh - 58px);
+  min-height: 560px;
+  max-height: 1205px;
   overflow: hidden;
   background: #3d5f58;
+  container-type: inline-size;
 }
 
 .figma-master-canvas {
@@ -22,13 +25,28 @@
   border: none;
 }
 
+.hero-building-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 96%;
+  height: 58%;
+  object-fit: contain;
+  object-position: bottom center;
+  pointer-events: none;
+  z-index: 20;
+  display: block;
+}
+
 /* ---------------- INTERACTIVE REGISTRATION BUTTON ---------------- */
 .hero-register-btn-wrapper {
   position: absolute;
   left: 74.3%;
-  top: 42.9%;
+  top: calc(514 / 1920 * 100cqw);
   width: 17.4%;
-  height: 7.06%;
+  height: calc(85 / 1920 * 100cqw);
   z-index: 60;
   display: flex;
 }
@@ -161,9 +179,9 @@
 .hero-acts-logo-wrapper {
   position: absolute;
   left: 90.26%;
-  top: 4.07%;
+  top: calc(49 / 1920 * 100cqw);
   width: 5.99%;
-  height: 9.21%;
+  height: calc(111 / 1920 * 100cqw);
   z-index: 50;
   display: flex;
   align-items: center;
